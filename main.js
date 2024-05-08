@@ -23,7 +23,7 @@ mongoose.connect(
 )
 const db= mongoose.connection;
 db.once("open",()=>{
-  console.log("Connect to MONGODB!!");
+  console.log("Connected to MONGODB!!");
 })
 
 app.set("port", process.env.PORT || port);
@@ -50,9 +50,9 @@ app.get("/transportation", homeController.showTransportation);
  * 구독자 페이지를 위한 라우트 추가나 바꾸기
  * ========================================
  */
-app.get("/contact",subscribersController.getSubscriptionPage);
+app.get("/contact", subscribersController.getSubscriptionPage);
 app.post("/subscribe", subscribersController.saveSubscriber);
-app.get("/subscribers",subscribersController.getAllSubscribers)
+app.get("/subscribers", subscribersController.getAllSubscribers);
 
 // Listing 12.12 (p. 184)
 app.use(errorController.logErrors);
