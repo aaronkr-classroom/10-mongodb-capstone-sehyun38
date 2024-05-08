@@ -22,27 +22,27 @@ var subscribers = [
   {
     name: "asdzx",
     email: "asd@asd.com",
-    phoneNumber: false,
+    newsletter:false,
   },
   {
     name: "qwea",
     email: "aasdqwe@asd.com",
-    phoneNumber: true,
+    newsletter:true,
   },
   {
     name: "zxcz",
     email: "aasdasd@asd.com",
-    phoneNumber: false,
+    newsletter: false,
   },
   {
     name: "qerasf",
     email: "qweq@asd.com",
-    phoneNumber: true,
+    newsletter: true,
   },
   {
     name: "asdqr",
     email: "qwer@asd.com",
-    phoneNumber: false,
+    newsletter: false,
   }
 ];
 
